@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*-- Base Styles --*/
+
+        html,
+        body {
+            position: relative;
+            margin: 0;
+            height: 100%;
+        }
+
+        html {
+            font-size: 28px;
+        }
+
+        body {
+            font-family: "Futura";
+            /* font-weight: bold; */
+            font-size: 1rem;
+            background-image: url('sourc_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #141414;
+        }
+
+
+
+        /*-- Sign Styles --*/
+
+        .sign {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sign__word {
+                font-size: 5.6rem;
+                text-align: center;
+                line-height: 1;
+                color: #ffc6d8;
+                animation: neon .08s ease-in-out infinite alternate;
+            }
+
+        /*-- Animation Keyframes --*/
+
+        @keyframes neon {
+            from {
+                text-shadow:
+                    0 0 6px rgba(202, 228, 225, 0.92),
+                    0 0 30px rgba(202, 228, 225, 0.34),
+                    0 0 12px rgba(247, 56, 89, 0.52),
+                    0 0 21px rgba(247, 56, 89, 0.92),
+                    0 0 34px rgba(247, 56, 89, 0.78),
+                    0 0 54px rgba(247, 56, 89, 0.92);
+            }
+
+            to {
+                text-shadow:
+                    0 0 6px rgba(202, 228, 225, 0.98),
+                    0 0 30px rgba(202, 228, 225, 0.42),
+                    0 0 12px rgba(247, 56, 89, 0.58),
+                    0 0 22px rgba(247, 56, 89, 0.84),
+                    0 0 38px rgba(247, 56, 89, 0.88),
+                    0 0 60px rgba(247, 56, 89, 1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sign">
+        <span class="sign__word">Neon</span>
+    </div>
+</body>
+
+</html>
